@@ -1,0 +1,22 @@
+:root{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;color:#111827;background:#f3f4f6}
+*{box-sizing:border-box}body{margin:0}.app{max-width:720px;margin:auto;padding:18px 14px 40px}
+header,.section-title{display:flex;justify-content:space-between;align-items:center}
+header h1{margin:2px 0 16px;font-size:30px}header small{color:#6b7280;font-size:10px;letter-spacing:2px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:14px}
+.cards div{background:#fff;border-radius:16px;padding:14px 10px;box-shadow:0 2px 10px #00000008}
+.cards span{display:block;color:#6b7280;font-size:12px}.cards b{display:block;margin-top:6px;font-size:17px}
+.panel{background:#fff;border-radius:18px;padding:16px;margin:12px 0;box-shadow:0 2px 12px #00000008}
+h2{font-size:18px;margin:0 0 14px}.tabs{display:flex;background:#f3f4f6;border-radius:10px;padding:3px;margin-bottom:14px}
+.tabs button{flex:1;border:0;background:none;padding:9px;border-radius:8px}.tabs .active{background:#111827;color:white}
+input,select,button{font:inherit}input,select{width:100%;border:1px solid #e5e7eb;border-radius:11px;padding:12px;background:#fff}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin:9px 0}
+.primary{width:100%;margin-top:10px;border:0;border-radius:12px;padding:12px;background:#111827;color:#fff;font-weight:600}
+.ghost,.actions button{border:1px solid #e5e7eb;background:#fff;border-radius:10px;padding:8px 12px}
+.section-title input{width:auto}.chart-wrap{display:grid;grid-template-columns:1fr 1fr;align-items:center}
+.chart-wrap canvas{max-width:100%}.legend{font-size:13px}.legend div{display:flex;justify-content:space-between;margin:8px 0}
+.dot{display:inline-block;width:9px;height:9px;border-radius:50%;background:#111827;margin-right:6px}
+.list{display:flex;flex-direction:column}.item{display:flex;justify-content:space-between;align-items:center;padding:13px 0;border-bottom:1px solid #f0f0f0}
+.item:last-child{border-bottom:0}.item small{display:block;color:#9ca3af;margin-top:3px}.amt{font-weight:700}.minus{color:#111827}.plus{color:#15803d}
+.delete{border:0;background:none;color:#9ca3af;margin-left:8px}.muted{color:#6b7280;font-size:13px}.actions{display:flex;gap:8px}.danger{color:#b91c1c!important}
+footer{text-align:center;color:#9ca3af;font-size:12px;margin-top:24px}
+@media(max-width:480px){.chart-wrap{grid-template-columns:1fr}.chart-wrap canvas{margin:auto}.cards b{font-size:15px}}
