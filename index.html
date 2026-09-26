@@ -1,1 +1,51 @@
-<!doctype html><html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>简记｜智能记账</title></head><body><h1>简记｜智能记账</h1><p>正在部署中，请稍候。</p></body></html>
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#111827">
+<meta name="description" content="简单、清晰的个人记账工具">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="stylesheet" href="style.css">
+<title>简记｜智能记账</title>
+</head>
+<body>
+<main class="app">
+<header>
+<div><small>SMART ACCOUNTING</small><h1>简记</h1></div>
+<button id="exportBtn" class="ghost">导出</button>
+</header>
+<section class="cards">
+<div><span>本月结余</span><b id="balance">¥0.00</b></div>
+<div><span>本月收入</span><b id="income">¥0.00</b></div>
+<div><span>本月支出</span><b id="expense">¥0.00</b></div>
+</section>
+<section class="panel">
+<h2>记一笔</h2>
+<div class="tabs"><button class="active" data-type="expense">支出</button><button data-type="income">收入</button></div>
+<form id="form">
+<input id="amount" type="number" inputmode="decimal" min="0" step="0.01" placeholder="0.00" required>
+<div class="grid"><select id="category"></select><input id="date" type="date" required></div>
+<input id="note" maxlength="50" placeholder="备注，例如：午餐">
+<button class="primary">保存账单</button>
+</form>
+</section>
+<section class="panel">
+<div class="section-title"><h2>本月统计</h2><span id="monthLabel"></span></div>
+<div class="chart-wrap"><canvas id="chart" width="320" height="220"></canvas><div id="legend" class="legend"></div></div>
+</section>
+<section class="panel">
+<div class="section-title"><h2>账单明细</h2><input id="monthFilter" type="month"></div>
+<div id="list" class="list"></div>
+</section>
+<section class="panel">
+<h2>数据管理</h2>
+<p class="muted">数据默认保存在当前设备浏览器。建议定期导出备份。</p>
+<div class="actions"><button id="importBtn">导入备份</button><button id="clearBtn" class="danger">清空全部</button></div>
+<input id="fileInput" type="file" accept=".json" hidden>
+</section>
+<footer>简记 · 第 1 版</footer>
+</main>
+<script src="app.js"></script>
+</body>
+</html>
