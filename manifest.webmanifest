@@ -1,1 +1,25 @@
-{"name":"简记｜智能记账","short_name":"简记","start_url":"./","display":"standalone","background_color":"#f3f4f6","theme_color":"#111827","lang":"zh-CN","icons":[]}
+{
+  "name": "简记｜智能记账",
+  "short_name": "简记",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f3f4f6",
+  "theme_color": "#111827",
+  "description": "简单、清晰的个人记账工具",
+  "lang": "zh-CN",
+  "icons": [
+    {
+      "src": "./icon-192.svg",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "./icon-512.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
