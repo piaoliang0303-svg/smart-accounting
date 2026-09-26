@@ -3,7 +3,7 @@
 一个移动端优先的个人记账 PWA。账单默认保存在浏览器本地，可导出 JSON 备份。
 
 ## 部署
-GitHub Pages + GitHub Actions。
+GitHub Actions。
 
 ## 当前功能
 - 收入/支出记账
